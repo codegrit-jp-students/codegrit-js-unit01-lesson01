@@ -2,6 +2,8 @@
 
 JavaScriptには、ポップアップウィンドウを表示させる機能があらかじめ用意されています。用意されているポップアップウィンドウも、1種類だけでなく、3つここでは紹介します。
 
+尚、モダンなアプリケーションでは、見た目のコントロールが出来ないポップアップウィンドウはあまり利用されません。しかし、知識としては全てのJSプログラマーは知っておくべきです。
+
 ### alert
 
 `alert`は以下のように書くことで、ブラウザの環境であればポップアップウィンドウを表示させることができます。
@@ -10,7 +12,9 @@ JavaScriptには、ポップアップウィンドウを表示させる機能が�
 alert('I\'m an alert popup window!');
 ```
 
-<img src="images/class1-alert.png" />
+<iframe width="100%" height="300" src="//jsfiddle.net/codegrit_hiro/pfye9oL0/1/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+![class1-alert.png](./images/class1-alert.png)
 
 `alert` のポップアップウィンドウの特徴として、ポップアップウィンドウに表示されるコンテンツは以下の2つです。
 
@@ -28,13 +32,15 @@ alert('I\'m an alert popup window!');
 prompt('I\'m a prompt! You can write me anything!');
 ```
 
-<img src="images/class1-prompt.png" />
+<iframe width="100%" height="300" src="//jsfiddle.net/codegrit_hiro/jxuoL7z0/1/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+![class1-prompt.png](./images/class1-prompt.png)
 
 `alert`のポップアップウインドウとは違って、今度はテキストを記入できる欄が表示されました。「コメントや回答を書くことができます。」と記入してみましょう。
 
 `alert`の時とは違って、OKボタンの外にCancelボタンも表示されています。「コメントや回答を書くことができます。」とテキストを記入した後に、OKボタンを押すとどうなるか変化を見てみましょう。
 
-<img src="images/class1-prompt2.png" />
+![class1-prompt2.png](./images/class1-prompt2.png)
 
 先ほど記入したテキストが文字列として返ってきたのが分かります。Cancelボタンを押した場合は`null`として値が返されます。
 
@@ -44,7 +50,9 @@ prompt('I\'m a prompt! You can write me anything!');
 prompt('I\'m a prompt! You can write me anything!', 'Like that!');
 ```
 
-<img src="images/class1-prompt3.png" />
+<iframe width="100%" height="300" src="//jsfiddle.net/codegrit_hiro/e5p1x473/1/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+![class1-prompt3.png](./images/class1-prompt3.png)
 
 あらかじめテキスト記入欄に、既に設定した文字列が記入されているのが分かります。
 `prompt`のポップアップウィンドウの特徴として、ポップアップウィンドウに表示されるコンテンツは以下の4つです。
@@ -61,7 +69,9 @@ prompt('I\'m a prompt! You can write me anything!', 'Like that!');
 confirm('I\'m a confirm!');
 ```
 
-<img src="images/class1-confirm.png" />
+<iframe width="100%" height="300" src="//jsfiddle.net/codegrit_hiro/e5p1x473/2/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+![class1-confirm.png](./images/class1-confirm.png)
 
 `confirm`の英訳通り、OKかCancelボタンで「確認」を求める内容が表示されました。
 

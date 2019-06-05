@@ -6,7 +6,7 @@
 
 HTML、CSSで見た要素を確認する画面が出てきますが、今回はJavaScriptの検証を行いたいので、以下のスクリーンショットのように**Console**をクリックします。
 
-<img src="images/js-devtool1.png" />
+![js-devtool1.png](./images/js-devtool1.png)
 
 スクリーンショットのように、HTMLやCSSではない画面にdeveloper tool部分が切り替わりましたね。これでJavaScriptを書いてどう反映されるか検証することができるようになりました。
 
@@ -14,16 +14,16 @@ HTML、CSSで見た要素を確認する画面が出てきますが、今回はJ
 
 ```js
 // 式の項目で見た例
-const name = "Julia";
+const name = 'Julia';
 
-function funcName() {
+function sayMyName() {
   document.write(name);
 }
 
-funcName();
+sayMyName();
 ```
 
-<img src="images/js-devtool2.png" />
+![js-devtool2.png](./images/js-devtool2.png)
 
 画面左上に「Julia」と表示されているのがアウトプットとして視覚的に確認できますね。
 値が返ってきて、変数に代入できるので、式と言うことが視覚的にも検証できました。
@@ -38,7 +38,7 @@ funcName();
 const name = 'Julia';
 ```
 
-<img src="images/js-devtool3.png" />
+![js-devtool3.png](./images/js-devtool3.png)
 
 式は値を返すので、ページに値である「Julia」が表示されるかと思いきや、何もページには指定した値が表示されていません。
 さらに、赤枠で囲んであるdeveloper toolのコンソール部分を確認しても、「Julia」ではなく`undefined`がアウトプットで返ってきています。
@@ -59,7 +59,7 @@ console.log(name);
 
 この`console.log();`の結果を見てみましょう。
 
-<img src="images/js-devtool4.png" />
+![js-devtool4.png](./images/js-devtool4.png)
 
 今度はコンソール上に「Julia」が値として返ってきました。
 `console.log();`は、非常に便利なツールで、JavaScriptのデバッグ（エラーを見つけること）には必ず使用します。
