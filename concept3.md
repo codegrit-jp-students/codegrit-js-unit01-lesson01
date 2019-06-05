@@ -99,7 +99,7 @@ JavaScriptには、あらかじめ用意されている**予約語**と言うも
 JavaScriptですでに用意されているキーワードの`var`を、関数として以下のように使用したとしましょう。
 
 ```js
-var var = function() {
+const var = function() {
   console.log('not working!');
 }
 
